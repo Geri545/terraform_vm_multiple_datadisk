@@ -20,9 +20,3 @@ data "azurerm_shared_image" "image" {
   resource_group_name = "RG_LHIND_AMS_DEVOPS4LHT_TEMPLATE_VM_DEVOPS4LHIND_P"
   name                = "RHEL8.7"
 }
-
-provider "azurerm" {
-  subscription_id = "54bad382-a2ed-4a22-bf45-c04a8a9a4df4"
-  alias           = "prod"
-  features {}
-}
