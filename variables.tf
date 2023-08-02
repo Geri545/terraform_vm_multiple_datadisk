@@ -56,16 +56,16 @@ variable "resourcedetails" {
       size        = "Standard_B2s"
       vnet_name   = "VNET_DEVOPS_P"
       subnet_name = "SUB__P_LINUX"
-      data_disk   = [20]
+      data_disk   = [20, 30]
     }
     vm2 = {
       rg_name     = "RG_LHIND_TEST"
-      name        = "lp-900.azlhindp.dlh.de"
+      name        = "lp-900"
       location    = "westeurope"
       size        = "Standard_B1s"
-      vnet_name   = "VNET_DEVOPS4LHIND_P"
-      subnet_name = "SUB_LHIND_P_LINUX"
-      data_disk   = [40]
+      vnet_name   = "VNET_DEVOPS_P"
+      subnet_name = "SUB__P_LINUX"
+      data_disk   = [40, 50]
     }
   }
 }
